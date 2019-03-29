@@ -1,5 +1,6 @@
 {
   "name": "odontograma-react",
+  "author": "Tiago Marques",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
