@@ -6,6 +6,9 @@
     width: 960px;
     margin: 0 auto;
 }
+.header{
+    margin: 30px 0 20px;
+}
 .boxTooth {
     width:35px;
     float:left;
