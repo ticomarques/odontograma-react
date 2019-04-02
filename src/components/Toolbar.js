@@ -5,11 +5,6 @@ import "react-awesome-button/dist/styles.css";
 
 export default class Toolbar extends Component {
 
-    handleAction = (cor, nome) => {
-        console.log(cor)
-        console.log(nome)
-    } 
-
     render(props) {     
         return (
             <div className="box-toolbar clear">
@@ -19,11 +14,11 @@ export default class Toolbar extends Component {
 
                 return <AwesomeButton 
                             type="primary" 
-                            key={item.nome} 
+                            key={nome} 
                             className="bt-toolbar"
-                            onPress={() => this.handleAction(cor, nome)}
+                            onPress={() => this.props.handleAction(cor, nome)}
                         >
-                            {item.nome}
+                            {nome}
                         </AwesomeButton>
             })}
             </div>

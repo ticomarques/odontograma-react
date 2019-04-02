@@ -43,13 +43,38 @@ class App extends Component {
     super(props)
 
     this.state = Store
-
     this.state.value = 0
   }
 
+  //Muda as abas
   handleChange = (event, value) => {
     this.setState({ value });
   };
+
+  //Muda acao dos de pintura 
+  handleAction = (cor, nome) => {
+      this.setState({marked: {selecionado: nome, cor}})
+  }
+  //Toogle - adiciona e remove dente
+  toggleTooth = (data) => {
+    if(data.status){
+      data.status = false
+      this.setState({data})
+    } else {
+      data.status = true
+      this.setState({data})
+    }
+  }
+  //Pinta face
+  setFace = (face, index, data) => {
+    const acao = this.state.marked.cor
+    if(acao === data.faces[index].estado){
+      data.faces[index].estado = 'white'
+    } else {
+      data.faces[index].estado = acao
+    }
+    this.setState({data})
+  }
 
   render() {
 
@@ -72,22 +97,34 @@ class App extends Component {
 
             {value === 0 && 
               <TabContainer>
-                {this.state.arcada.adulto.map((item) => {
-                  return <Tooth key={item.id} data={item}/>
+                {this.state.arcada.adulto.map((item, index) => {
+                  return <Tooth 
+                            key={item.id}
+                            index={index}
+                            data={item} 
+                            toggleTooth={this.toggleTooth}
+                            setFace={this.setFace}
+                          />
                 })}
               </TabContainer>
             }
 
             {value === 1 && 
               <TabContainer>
-                {this.state.arcada.infantil.map((item) => {
-                  return <Tooth key={item.id} data={item}/>
+                {this.state.arcada.infantil.map((item, index) => {
+                  return <Tooth 
+                            key={item.id}
+                            index={index}
+                            data={item}
+                            toggleTooth={this.toggleTooth}
+                            setFace={this.setFace}
+                          />
                 })}
               </TabContainer>
             }
           </div>
 
-          <Toolbar toolbar={this.state.toolbar}/>
+          <Toolbar toolbar={this.state.toolbar} handleAction={this.handleAction} cor={this.state.marked.cor}/>
         </main>
         
       </div>

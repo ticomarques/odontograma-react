@@ -1,11 +1,13 @@
 const Store = {
-    toolbar: {
+    marked: {
       selecionado: '',
-      cor:'',
+      cor:''
+    },
+    toolbar: {
       opcoes: [
         {
           nome: 'Restaurado',
-          cor: 'blue'
+          cor: 'black'
         }, {
           nome: 'Caríado',
           cor: 'green'
@@ -19,7 +21,7 @@ const Store = {
       adulto: [{
         id: 18,
         nome: 'dente18',
-        status: "on",
+        status: true,
         faces: [
           {
             id: '18face1',
@@ -46,6 +48,7 @@ const Store = {
       },{
         id: 17,
         nome: 'dente17',
+        status: true,
         faces: [
           {
             id: '17face1',
@@ -72,6 +75,7 @@ const Store = {
       },{
         id: 16,
         nome: 'dente16',
+        status: true,
         faces: [
           {
             id: '16face1',
@@ -98,6 +102,7 @@ const Store = {
       }, {
         id: 15,
         nome: 'dente15',
+        status: true,
         faces: [
           {
             id: '15face1',
@@ -124,6 +129,7 @@ const Store = {
       }, {
         id: 14,
         nome: 'dente14',
+        status: true,
         faces: [
           {
             id: '14face1',
@@ -150,6 +156,7 @@ const Store = {
       }, {
         id: 13,
         nome: 'dente13',
+        status: true,
         faces: [
           {
             id: '13face1',
@@ -176,6 +183,7 @@ const Store = {
       }, {
         id: 12,
         nome: 'dente12',
+        status: true,
         faces: [
           {
             id: '12face1',
@@ -202,6 +210,7 @@ const Store = {
       }, {
         id: 11,
         nome: 'dente11',
+        status: true,
         css: 'spaceRight',
         faces: [
           {
@@ -229,6 +238,7 @@ const Store = {
       }, {
         id: 21,
         nome: 'dente21',
+        status: true,
         faces: [
           {
             id: '21face1',
@@ -255,6 +265,7 @@ const Store = {
       }, {
         id: 22,
         nome: 'dente22',
+        status: true,
         faces: [
           {
             id: '22face1',
@@ -281,6 +292,7 @@ const Store = {
       }, {
         id: 23,
         nome: 'dente23',
+        status: true,
         faces: [
           {
             id: '23face1',
@@ -307,6 +319,7 @@ const Store = {
       }, {
         id: 24,
         nome: 'dente24',
+        status: true,
         faces: [
           {
             id: '24face1',
@@ -333,6 +346,7 @@ const Store = {
       }, {
         id: 25,
         nome: 'dente25',
+        status: true,
         faces: [
           {
             id: '25face1',
@@ -359,6 +373,7 @@ const Store = {
       }, {
         id: 26,
         nome: 'dente26',
+        status: true,
         faces: [
           {
             id: '26face1',
@@ -385,6 +400,7 @@ const Store = {
       }, {
         id: 27,
         nome: 'dente27',
+        status: true,
         faces: [
           {
             id: '27face1',
@@ -411,6 +427,7 @@ const Store = {
       }, {
         id: 28,
         nome: 'dente11',
+        status: true,
         css: 'noMarginRight',
         faces: [
           {
@@ -438,6 +455,7 @@ const Store = {
       }, {
         id: 48,
         nome: 'dente48',
+        status: true,
         css: 'clear',
         faces: [
           {
@@ -465,6 +483,7 @@ const Store = {
       }, {
         id: 47,
         nome: 'dente47',
+        status: true,
         faces: [
           {
             id: '47face1',
@@ -491,6 +510,7 @@ const Store = {
       }, {
         id: 46,
         nome: 'dente46',
+        status: true,
         faces: [
           {
             id: '46face1',
@@ -517,6 +537,7 @@ const Store = {
       }, {
         id: 45,
         nome: 'dente45',
+        status: true,
         faces: [
           {
             id: '45face1',
@@ -543,6 +564,7 @@ const Store = {
       }, {
         id: 44,
         nome: 'dente44',
+        status: true,
         faces: [
           {
             id: '44face1',
@@ -569,6 +591,7 @@ const Store = {
       }, {
         id: 43,
         nome: 'dente43',
+        status: true,
         faces: [
           {
             id: '43face1',
@@ -595,6 +618,7 @@ const Store = {
       }, {
         id: 42,
         nome: 'dente42',
+        status: true,
         faces: [
           {
             id: '42face1',
@@ -621,6 +645,7 @@ const Store = {
       }, {
         id: 41,
         nome: 'dente41',
+        status: true,
         css: 'spaceRight',
         faces: [
           {
@@ -648,6 +673,7 @@ const Store = {
       }, {
         id: 31,
         nome: 'dente31',
+        status: true,
         faces: [
           {
             id: '31face1',
@@ -674,6 +700,7 @@ const Store = {
       }, {
         id: 32,
         nome: 'dente32',
+        status: true,
         faces: [
           {
             id: '32face1',
@@ -700,6 +727,7 @@ const Store = {
       }, {
         id: 33,
         nome: 'dente35',
+        status: true,
         faces: [
           {
             id: '33face1',
@@ -726,6 +754,7 @@ const Store = {
       }, {
         id: 34,
         nome: 'dente34',
+        status: true,
         faces: [
           {
             id: '34face1',
@@ -752,6 +781,7 @@ const Store = {
       }, {
         id: 35,
         nome: 'dente35',
+        status: true,
         faces: [
           {
             id: '35face1',
@@ -778,6 +808,7 @@ const Store = {
       }, {
         id: 36,
         nome: 'dente36',
+        status: true,
         faces: [
           {
             id: '36face1',
@@ -804,6 +835,7 @@ const Store = {
       }, {
         id: 37,
         nome: 'dente37',
+        status: true,
         faces: [
           {
             id: '37face1',
@@ -830,6 +862,7 @@ const Store = {
       }, {
         id: 38,
         nome: 'dente38',
+        status: true,
         css: 'noMarginRight',
         faces: [
           {
@@ -859,6 +892,7 @@ const Store = {
         {
           id: 55,
           nome: 'dente55',
+          status: true,
           faces: [
             {
               id: '55face1',
@@ -885,6 +919,7 @@ const Store = {
         }, {
           id: 54,
           nome: 'dente54',
+          status: true,
           faces: [
             {
               id: '54face1',
@@ -911,6 +946,7 @@ const Store = {
         }, {
           id: 53,
           nome: 'dente53',
+          status: true,
           faces: [
             {
               id: '53face1',
@@ -937,6 +973,7 @@ const Store = {
         }, {
           id: 52,
           nome: 'dente52',
+          status: true,
           faces: [
             {
               id: '52face1',
@@ -963,6 +1000,7 @@ const Store = {
         }, {
           id: 51,
           nome: 'dente51',
+          status: true,
           css: "spaceRight",
           faces: [
             {
@@ -990,6 +1028,7 @@ const Store = {
         }, {
           id: 61,
           nome: 'dente61',
+          status: true,
           faces: [
             {
               id: '61face1',
@@ -1016,6 +1055,7 @@ const Store = {
         }, {
           id: 62,
           nome: 'dente62',
+          status: true,
           faces: [
             {
               id: '62face1',
@@ -1042,6 +1082,7 @@ const Store = {
         }, {
           id: 63,
           nome: 'dente63',
+          status: true,
           faces: [
             {
               id: '63face1',
@@ -1068,6 +1109,7 @@ const Store = {
         }, {
           id: 64,
           nome: 'dente64',
+          status: true,
           faces: [
             {
               id: '64face1',
@@ -1094,6 +1136,7 @@ const Store = {
         }, {
           id: 65,
           nome: 'dente65',
+          status: true,
           css: "noMarginRight",
           faces: [
             {
@@ -1121,6 +1164,7 @@ const Store = {
         }, {
           id: 85,
           nome: 'dente85',
+          status: true,
           css: "clear",
           faces: [
             {
@@ -1148,6 +1192,7 @@ const Store = {
         }, {
           id: 84,
           nome: 'dente84',
+          status: true,
           faces: [
             {
               id: '84face1',
@@ -1174,6 +1219,7 @@ const Store = {
         }, {
           id: 83,
           nome: 'dente83',
+          status: true,
           faces: [
             {
               id: '83face1',
@@ -1200,6 +1246,7 @@ const Store = {
         }, {
           id: 82,
           nome: 'dente82',
+          status: true,
           faces: [
             {
               id: '82face1',
@@ -1226,6 +1273,7 @@ const Store = {
         }, {
           id: 81,
           nome: 'dente81',
+          status: true,
           css: "spaceRight",
           faces: [
             {
@@ -1253,6 +1301,7 @@ const Store = {
         }, {
           id: 71,
           nome: 'dente71',
+          status: true,
           faces: [
             {
               id: '71face1',
@@ -1279,6 +1328,7 @@ const Store = {
         }, {
           id: 72,
           nome: 'dente72',
+          status: true,
           faces: [
             {
               id: '72face1',
@@ -1305,6 +1355,7 @@ const Store = {
         }, {
           id: 73,
           nome: 'dente73',
+          status: true,
           faces: [
             {
               id: '73face1',
@@ -1331,6 +1382,7 @@ const Store = {
         }, {
           id: 74,
           nome: 'dente74',
+          status: true,
           faces: [
             {
               id: '74face1',
@@ -1357,6 +1409,7 @@ const Store = {
         }, {
           id: 75,
           nome: 'dente75',
+          status: true,
           css: "noMarginRight",
           faces: [
             {
